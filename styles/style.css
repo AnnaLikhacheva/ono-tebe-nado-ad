@@ -283,3 +283,85 @@
   width: 48px;
   height: 48px;
 }
+
+@media (max-width: 1100px) {
+  /* HEADER */
+  .header {
+    padding: 92px 50px 92px;
+  }
+  
+  /* COVER */
+  .cover {
+    padding: 165px 50px 50px;
+  }
+  
+  .cover__title {
+    font-size: 90px;
+    letter-spacing: 0.25em;
+  }
+  
+  .letter-spacing-extended {
+    letter-spacing: 0.5em;
+  }
+  
+  .cover__description {
+    margin-top: 120px;
+    gap: 60px;
+  }
+  
+  .cover__description-text {
+    font-size: 20px;
+  }
+  
+  /* LOTS */
+  .lots {
+    padding: 150px 50px;
+  }
+  
+  .lots__card-list {
+    flex-wrap: wrap;
+  }
+  
+  .lots__card-list-item {
+    min-width: 300px;
+  }
+  
+  .card {
+    min-height: 400px;
+    padding: 40px 30px;
+  }
+  
+  .card__title {
+    font-size: 20px;
+  }
+  
+  .card__text {
+    font-size: 18px;
+  }
+  
+  /* ABOUT */
+  .about {
+    padding: 0 50px 150px;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .about__logo {
+    width: 210px;
+    height: 210px;
+    padding: 55px 40px;
+  }
+  
+  .about__title {
+    margin: 80px 0;
+    font-size: 36px;
+  }
+  
+  .about__text {
+    font-size: 18px;
+  }
+  
+  /* FOOTER */
+  .footer {
+    padding: 150px 50px 80px;
+  }
+}
