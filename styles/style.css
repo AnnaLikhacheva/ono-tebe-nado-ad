@@ -307,12 +307,16 @@
     justify-content: end;
     align-items: center;
     gap: 78px;
-    margin-top: 100px;
+    margin-top: 120px;
     height: auto;
   }
 
+  .cover__description-text {
+    margin-right: 55px;
+  }
+
   .lots {
-    padding: 180px 24px;
+    padding: 180px 24px 50px;
     box-sizing: border-box;
     max-width: 1100px;
     margin: 0 auto;
@@ -338,7 +342,7 @@
     display: grid;
     grid-template-columns: 430px 1fr;
     gap: 25px;
-    padding: 100px 50px 140px;
+    padding: 50px 50px 50px;
     margin: 0;
   }
 
@@ -346,6 +350,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    padding-left: 50px;
   }
 
   .about__logo {
