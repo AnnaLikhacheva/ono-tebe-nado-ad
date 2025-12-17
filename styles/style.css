@@ -332,6 +332,20 @@
     margin-right: 0;
   }
 
+   .cover__title .aligned-text:first-child {
+    padding-right: 10px; /* Сдвигаем немного вправо */
+  }
+  
+  /* Для "ТЕБЕ" - вторая строка */
+  .cover__title .aligned-text_center {
+    letter-spacing: 0.3em;
+  }
+  
+  /* Для "НАДО" - третья строка, буква "Н" */
+  .cover__title .aligned-text_right {
+    letter-spacing: 0.32em;
+  }
+
   .cover__description {
     margin-top: 104px;
     display: flex;
@@ -363,7 +377,7 @@
     width: 100%; /* Меняем фиксированную ширину на 100% */
     max-width: 1052px; /* Ограничиваем максимальную ширину */
     padding: 180px 50px; /* Убираем большой padding */
-    margin: 0 auto; /* Центрируем */
+    margin: 0 24px 0 24px; /* Центрируем */
     box-sizing: border-box;
   }
 
@@ -377,7 +391,7 @@
 
   .lots__card-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 25px;
     justify-content: center; /* Центрируем карточки */
   }
