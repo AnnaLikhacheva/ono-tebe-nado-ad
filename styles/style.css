@@ -377,7 +377,7 @@
     width: 1052px; /* Ограничиваем максимальную ширину */
     padding: 180px 24px; /* Убираем большой padding */
     box-sizing: border-box;
-    margin: 0 24px 0 24px;
+    margin: 0 24px 0 24px !important;
   }
 
   .lots__heading {
@@ -410,47 +410,70 @@
 
   .about {
     all: unset !important;
+    display: grid !important;
+    grid-template-columns: 240px 1fr !important; /* Лого 240px, остальное - текст */
+    gap: 50px !important;
+    padding: 100px 50px 140px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
   }
-  
-  .about {
-    display: flex;
-    grid-template-columns: 260px 1fr;
-    gap: 20px;
-    padding: 50px 40px 70px;
-    margin: -100px -50px 0;
-    width: calc(100% + 100px);
-    position: relative;
-    z-index: 1;
-  }
-  
+
   .about__column {
+    all: unset;
     display: flex;
     flex-direction: column;
-    padding-left: 0; 
-    margin-left: -20px;
   }
 
+  /* Логотип - слева, не по центру */
   .about__logo {
-    display: flex;
+    all: unset;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 240px;
-    padding: 0; /* Убираем лишний padding */
-    margin: 0 auto; /* Центрируем */
+    width: 240px !important;
+    height: 240px !important;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0 !important;
   }
 
+  .about__logo-image {
+    width: 148px;
+    height: 114px;
+  }
+
+  /* Заголовок - справа от лого, не по центру */
   .about__title {
-    margin: 100px 0;
-  }
-  
-  .about__text {
-    width: 100%;
-    max-width: 900px;
-    margin-left: -70px;
-    padding-right: 50px;
+    all: unset;
+    font-weight: 700;
+    font-size: 40px !important;
+    text-transform: uppercase;
+    margin: 0 0 50px 0 !important;
+    padding: 0 !important;
   }
 
+  /* Текст - под заголовком, широкий, 5 строк */
+  .about__text {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Абзацы в тексте */
+  .about__text p {
+    margin: 0;
+    padding: 0;
+  }
 
   /* FOOTER */
   .footer {
