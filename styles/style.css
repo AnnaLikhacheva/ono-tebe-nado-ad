@@ -287,7 +287,6 @@
   }
 
   .cover {
-    height: auto;
     height: 757px;
     padding: 140px 50px 50px;
   }
@@ -298,16 +297,16 @@
     justify-content: end;
     align-items: center;
     gap: 78px;
-    margin-top: 120px;
+    margin-top: 125px;
     height: auto;
   }
 
   .cover__description-text {
-    margin-right: 20px;
+    margin-right: 23px;
   }
 
   .lots {
-    padding: 180px 24px 68px;
+    padding: 180px 24px 78px;
     box-sizing: border-box;
     max-width: 1100px;
     margin: 0 auto;
@@ -332,13 +331,12 @@
   .about {
     display: grid;
     gap: 25px;
-    padding: 68px 50px 50px;
+    padding: 78px 50px 50px;
     margin: 0;
   }
 
   .about__column {
-    margin-left: 0;
-    padding-left: 20px;
+    margin-left: -50px;
   }
 
   .about__logo {
@@ -353,7 +351,6 @@
   .about__text {
     width: 693px;
     height: 312px;
-    height: auto;
   }
 
   .footer {
