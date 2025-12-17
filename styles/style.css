@@ -374,8 +374,7 @@
 
   /* LOTS */
   .lots {
-    width: 100%; /* Меняем фиксированную ширину на 100% */
-    max-width: 1052px; /* Ограничиваем максимальную ширину */
+    width: 1052px; /* Ограничиваем максимальную ширину */
     padding: 180px 50px; /* Убираем большой padding */
     margin: 0 24px 0 24px; /* Центрируем */
     box-sizing: border-box;
@@ -409,13 +408,18 @@
   }
 
   .about {
+    all: unset !important;
+  }
+  
+  .about {
     display: grid;
-    grid-template-columns: 430px 1fr;
-    gap: 25px;
-    padding: 60px 10px 80px 40px;
-    max-width: 1052px;
-    margin: -50px 24px 0 24px;
-    box-sizing: border-box;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
+    padding: 50px 40px 70px;
+    margin: -100px -50px 0;
+    width: calc(100% + 100px);
+    position: relative;
+    z-index: 1;
   }
   
   .about__column {
@@ -440,10 +444,10 @@
   }
   
   .about__text {
-    margin-right: 0; /* Убираем */
-    width: 100%;
-    max-width: 693px;
-    height: auto; /* Меняем фиксированную высоту на auto */
+    width: 150%;
+    max-width: 900px;
+    margin-left: -25%;
+    padding-right: 50px;
   }
 
 
