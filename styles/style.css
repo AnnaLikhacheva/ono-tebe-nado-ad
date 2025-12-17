@@ -375,8 +375,7 @@
   /* LOTS */
   .lots {
     width: 1052px; /* Ограничиваем максимальную ширину */
-    padding: 180px 50px; /* Убираем большой padding */
-    margin: 0 24px 0 24px; /* Центрируем */
+    padding: 180px 24px; /* Убираем большой padding */
     box-sizing: border-box;
     margin: 0 24px 0 24px;
   }
@@ -393,7 +392,9 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 25px;
-    justify-content: center; /* Центрируем карточки */
+    justify-content: center;
+    max-width: 1052px; 
+    margin: 0 auto; 
   }
 
   .lots__card-list-item {
@@ -412,8 +413,8 @@
   }
   
   .about {
-    display: grid;
-    grid-template-columns: 400px 1fr;
+    display: flex;
+    grid-template-columns: 260px 1fr;
     gap: 20px;
     padding: 50px 40px 70px;
     margin: -100px -50px 0;
