@@ -278,6 +278,11 @@
 
 
 @media (max-width: 1100px) {
+
+    .cover {
+    height: 757px;
+  }
+
   .lots {
     padding: 180px 24px; 
     box-sizing: border-box;
@@ -301,9 +306,6 @@
     min-height: 0; 
   }
   
-  .cover {
-    width: 757px;
-  }
 }
 
 
