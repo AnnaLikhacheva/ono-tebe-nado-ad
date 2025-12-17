@@ -278,6 +278,9 @@
 
 
 @media (max-width: 1100px) {
+    .header {
+    height: 293px;
+}
 
     .cover {
     height: 757px;
@@ -305,6 +308,11 @@
     height: 596px; 
     min-height: 0; 
   }
+
+  .about__text {
+  width: 693px;
+  height: 449px;
+}
   
 }
 
