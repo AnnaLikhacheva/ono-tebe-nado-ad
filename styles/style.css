@@ -309,9 +309,18 @@
     min-height: 0; 
   }
 
-  .about__text {
-  width: 693px;
-  height: 449px;
+  .about__logo {
+  margin-top: 25;
+  margin-left: 47;
+}
+
+  .about__title{
+    margin-top: 3;
+  }
+
+  .about__text{
+    margin-top: 133;
+  margin-left: 359;
 }
   
 }
