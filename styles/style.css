@@ -295,7 +295,7 @@
     justify-content: end;
     align-items: center;
     gap: 78px;
-    margin-top: 135px;
+    margin-top: 100px;
     height: auto;
   }
 
@@ -323,47 +323,35 @@
   }
 
   .about {
-    display: block; 
-    padding: 140px 50px;
-    margin: 0 auto;
-    max-width: 1000px;
-  }
-
-  .about__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    padding: 140px 50px 140px;
+    margin: 0;
   }
 
   .about__logo {
-    margin: 0 auto 50px;
-    width: 240px;
-    height: 240px;
+    margin: 0;
+    justify-self: center;
   }
 
   .about__title {
-    margin: 0 0 50px 0;
-    font-size: 40px;
+    margin: 60px 0 50px 0;
   }
 
   .about__text {
+    margin: 0;
     width: 100%;
-    max-width: 693px;
-    margin: 0 auto;
     height: auto;
+    max-width: 693px;
   }
 
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding: 140px 50px 90px;
     margin: 0;
   }
 }
-
-
 @media (max-width: 768px) {
   .header {
     grid-template-columns: 1fr;
