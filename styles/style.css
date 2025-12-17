@@ -333,11 +333,11 @@
   }
 
   .cover__description {
-    margin-top: 100px;
+    margin-top: 105px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 78px;
+    gap: 85px;
   }
 
   .cover__description-text {
@@ -362,8 +362,7 @@
   .lots {
     width: 1052px;
     padding: 180px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin: 24px;
   }
 
   .lots__heading {
@@ -375,7 +374,6 @@
   }
 
   .lots__card-list {
-    display: flex;
     gap: 25px;
   }
 
@@ -402,19 +400,13 @@
     margin: 0 auto;
   }
 
-  .about__column{
-    margin-left: -50px;
+  .about__column {
+    padding-left: 50px;
   }
 
   .about__logo {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    padding-right: 50px;
+
   }
 
   .about__title {
@@ -431,6 +423,7 @@
     font-size: 20px;
     line-height: 1.2;
     width: 693px;
+    margin-right: 10px;
   }
 
   /* FOOTER */
