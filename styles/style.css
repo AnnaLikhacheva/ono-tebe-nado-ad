@@ -305,8 +305,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
   }
 
+  /* Исправляем выравнивание текста в cover */
   .cover__title {
     display: flex;
     flex-direction: column;
@@ -319,12 +321,10 @@
     text-transform: uppercase;
   }
 
-  .aligned-text {
-    display: block;
-  }
-
+  /* Точная настройка для "оно тебе надо" */
   .aligned-text_center {
     text-align: center;
+    letter-spacing: 0.3em;
   }
 
   .aligned-text_right {
@@ -360,9 +360,11 @@
 
   /* LOTS */
   .lots {
-    width: 1052px;
-    padding: 180px;
-    margin: 24px;
+    width: 100%; /* Меняем фиксированную ширину на 100% */
+    max-width: 1052px; /* Ограничиваем максимальную ширину */
+    padding: 180px 50px; /* Убираем большой padding */
+    margin: 0 auto; /* Центрируем */
+    box-sizing: border-box;
   }
 
   .lots__heading {
@@ -377,34 +379,34 @@
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    justify-content: center; /* Центрируем карточки */
   }
 
   .lots__card-list-item {
-    width: 334px;
-    height: 596px;
+    width: 334px; /* Фиксированная ширина как нужно */
+    height: 596px; /* Фиксированная высота как нужно */
+    flex: 0 0 auto; /* Не растягиваем */
   }
 
-  .card__title {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  .card__text {
-    font-size: 20px;
-    line-height: 1.2;
+  .card {
+    width: 100%;
+    height: 100%;
   }
 
   .about {
-  display: grid;
-  grid-template-columns: 430px 1fr;
-  gap: 25px;
-  padding: 0 20px 120px;
-}
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    gap: 25px;
+    padding: 0 50px 120px; /* Возвращаем нормальные отступы */
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
   
   .about__column {
     display: flex;
     flex-direction: column;
-    padding-left: 35px;
+    padding-left: 0; /* Убираем лишний padding */
   }
 
   .about__logo {
@@ -413,20 +415,21 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    padding: 35px 35px 0 47px;
+    padding: 0; /* Убираем лишний padding */
+    margin: 0 auto; /* Центрируем */
   }
 
   .about__title {
     margin: 100px 0;
   }
-
   
   .about__text {
-    margin-right: 20px;
+    margin-right: 0; /* Убираем */
     width: 100%;
     max-width: 693px;
-    height: 312px;
+    height: auto; /* Меняем фиксированную высоту на auto */
   }
+
 
 
   /* FOOTER */
