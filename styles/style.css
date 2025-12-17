@@ -285,6 +285,13 @@
     .cover {
     height: 757px;
   }
+  .cover__title{
+    
+  }
+  .cover__description{
+    height: 51;
+    margin-top: 650;
+  }
 
   .lots {
     padding: 180px 24px; 
@@ -308,9 +315,13 @@
     height: 596px; 
     min-height: 0; 
   }
-
+.about{
+    margin-top: 2073;
+    margin-left: 24;
+    margin-right: 24;
+}
   .about__logo {
-  margin-top: 25;
+  margin-top: 35;
   margin-left: 47;
 }
 
@@ -319,10 +330,13 @@
   }
 
   .about__text{
-    margin-top: 133;
-  margin-left: 359;
+    margin-top: 150;
+  width: 693;
+  height: 312;
 }
-  
+  .footer{
+    margin-top: 2848;
+  }
 }
 
 
